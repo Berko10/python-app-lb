@@ -1,39 +1,18 @@
 events {
     worker_connections 1024;
 }
-
-http {
 upstream app_backend {
-    server app1:5000;
-    server app2:5000;
-    server app3:5000;
-    server app4:5000;
-    server app5:5000;
-    server app6:5000;
-    server app7:5000;
-    server app8:5000;
-    server app9:5000;
-    server app10:5000;
-}
-
-    map $cookie_internal_ip $target_backend {
         # Default - will use upstream
-        default "";
+        default http://app_backend;
         # If cookie has a value, use it directly
-        "~.+" $cookie_internal_ip;
+        "~.+" http://$cookie_internal_ip:5000;
     }
 
     server {
         listen 80;
 
         location / {
-            if ($target_backend) {
-                proxy_pass http://$target_backend:5000;
-            }
-            # Otherwise use the upstream
-            if ($target_backend = "") {
-                proxy_pass http://app_backend;
-            }
+            proxy_pass $target_backend;
 
             proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
@@ -42,13 +21,7 @@ upstream app_backend {
         }
 
         location /showcount {
-            if ($target_backend) {
-                proxy_pass http://$target_backend:5000;
-            }
-            # Otherwise use the upstream
-            if ($target_backend = "") {
-                proxy_pass http://app_backend;
-            }
+            proxy_pass $target_backend;
 
             proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;

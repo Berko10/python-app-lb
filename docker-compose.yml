@@ -7,48 +7,20 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - app1
-      - app2
-      - app3
+      - app
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     networks:
       - app_network
 
-  app-builder:
-    build: ./app
+  app:
     image: my-flask-app
-    entrypoint: [ "echo", "image built" ]
-    networks:
-      - app_network
-
-  app1:
-    image: my-flask-app
-    container_name: app1
+    deploy:
+      replicas: 3
     depends_on:
       - db
     volumes:
-      - ./logs/app1:/app/logs
-    networks:
-      - app_network
-
-  app2:
-    image: my-flask-app
-    container_name: app2
-    depends_on:
-      - db
-    volumes:
-      - ./logs/app2:/app/logs
-    networks:
-      - app_network
-
-  app3:
-    image: my-flask-app
-    container_name: app3
-    depends_on:
-      - db
-    volumes:
-      - ./logs/app3:/app/logs
+      - ./logs/app:/app/logs
     networks:
       - app_network
 
@@ -62,6 +34,7 @@ services:
       - ./mysql/db_data:/var/lib/mysql
       - ./logs/db_logs:/var/log/mysql
       - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    command: --log-error=/var/log/mysql/mysql-error.log --general_log=1 --general_log_file=/var/log/mysql/mysql-general.log --slow_query_log=1 --slow_query_log_file=/var/log/mysql/mysql-slow.log --long_query_time=2
     networks:
       - app_network
 
