@@ -1,0 +1,78 @@
+2025-05-02 11:30:38,709 - INFO - Starting Flask app
+2025-05-02 11:30:38,766 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.3:5000
+2025-05-02 11:30:38,766 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-02 11:30:38,767 - INFO -  * Restarting with stat
+2025-05-02 11:30:39,157 - INFO - Starting Flask app
+2025-05-02 11:30:39,168 - WARNING -  * Debugger is active!
+2025-05-02 11:30:39,169 - INFO -  * Debugger PIN: 805-581-837
+2025-05-02 11:33:02,127 - INFO - Starting Flask app
+2025-05-02 11:33:02,372 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.11:5000
+2025-05-02 11:33:02,372 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-02 11:33:02,373 - INFO -  * Restarting with stat
+2025-05-02 11:33:02,831 - INFO - Starting Flask app
+2025-05-02 11:33:02,852 - WARNING -  * Debugger is active!
+2025-05-02 11:33:02,852 - INFO -  * Debugger PIN: 891-563-599
+2025-05-02 11:35:31,569 - INFO - Starting Flask app
+2025-05-02 11:35:31,703 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.11:5000
+2025-05-02 11:35:31,703 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-02 11:35:31,712 - INFO -  * Restarting with stat
+2025-05-02 11:35:31,982 - INFO - Starting Flask app
+2025-05-02 11:35:31,995 - WARNING -  * Debugger is active!
+2025-05-02 11:35:31,996 - INFO -  * Debugger PIN: 105-880-004
+2025-05-02 11:35:50,551 - INFO - Starting Flask app
+2025-05-02 11:35:50,627 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.3:5000
+2025-05-02 11:35:50,627 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-02 11:35:50,627 - INFO -  * Restarting with stat
+2025-05-02 11:35:50,906 - INFO - Starting Flask app
+2025-05-02 11:35:50,913 - WARNING -  * Debugger is active!
+2025-05-02 11:35:50,913 - INFO -  * Debugger PIN: 652-800-960
+2025-05-02 11:44:12,272 - INFO - Starting Flask app
+2025-05-02 11:44:12,329 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.5:5000
+2025-05-02 11:44:12,330 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-02 11:44:12,330 - INFO -  * Restarting with stat
+2025-05-02 11:44:12,596 - INFO - Starting Flask app
+2025-05-02 11:44:12,602 - WARNING -  * Debugger is active!
+2025-05-02 11:44:12,603 - INFO -  * Debugger PIN: 559-146-981
+2025-05-02 11:44:45,618 - INFO - 172.18.0.6 - - [02/May/2025 11:44:45] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2025-05-02 11:45:11,344 - INFO - Starting Flask app
+2025-05-02 11:45:11,556 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.6:5000
+2025-05-02 11:45:11,556 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-02 11:45:11,556 - INFO -  * Restarting with stat
+2025-05-02 11:45:12,035 - INFO - Starting Flask app
+2025-05-02 11:45:12,063 - WARNING -  * Debugger is active!
+2025-05-02 11:45:12,064 - INFO -  * Debugger PIN: 607-504-468
+2025-05-02 11:45:38,764 - INFO - Fetched counter value: 37
+2025-05-02 11:45:38,824 - INFO - Counter updated successfully
+2025-05-02 11:45:38,824 - INFO - Client IP: 172.18.0.13, Internal IP: 172.18.0.6, Hostname: 552d5d61cc29
+2025-05-02 11:45:38,827 - INFO - Cookie status: (new cookie), Selected internal IP: 172.18.0.6
+2025-05-02 11:45:38,827 - INFO - New internal IP cookie set
+2025-05-02 11:45:38,875 - INFO - Access logged successfully
+2025-05-02 11:45:38,877 - INFO - 172.18.0.13 - - [02/May/2025 11:45:38] "GET / HTTP/1.0" 200 -
+2025-05-02 11:46:04,941 - INFO - Starting Flask app
+2025-05-02 11:46:04,994 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.5:5000
+2025-05-02 11:46:04,994 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-02 11:46:04,995 - INFO -  * Restarting with stat
+2025-05-02 11:46:05,200 - INFO - Starting Flask app
+2025-05-02 11:46:05,208 - WARNING -  * Debugger is active!
+2025-05-02 11:46:05,209 - INFO -  * Debugger PIN: 277-680-712
