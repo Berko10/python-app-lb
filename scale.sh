@@ -16,13 +16,11 @@ fi
 
 echo "Scaling app service to $TARGET replicas..."
 
-
-# !!! חשוב: ודא ששם השירות של האפליקציה שלך ב-docker-compose.yml הוא "app" !!!
+# App service name is "app"
 APP_SERVICE_NAME="app"
 
 # Scale the app service using the recommended method
 docker-compose up -d --no-recreate --scale "$APP_SERVICE_NAME"="$TARGET"
-
 
 echo "App service scaled to $TARGET replicas."
 
