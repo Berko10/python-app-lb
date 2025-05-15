@@ -89,61 +89,6 @@ Artifacts are automatically deployed or made available for each environment.
 
 ---
 
-## 👤 Roles & Responsibilities
-
-| Role        | Responsibility                          |
-|-------------|----------------------------------------|
-| Developers  | Code, tests, commit messages, branches |
-| DevOps Lead | CI/CD, infra, deployment pipelines, reviews |
-| Reviewers   | Code reviews, quality enforcement       |
-
----
-
-## 🧪 Testing
-
-All code must include:
-
-- Unit Tests  
-- Optional: E2E tests (Cypress/Playwright)  
-
-Tests are required to pass in the CI pipeline.
-
----
-
-## 📁 Project Structure (Client App)
-
-```
-/client
- ├── Dockerfile
- ├── package.json
- ├── package-lock.json
- └── /src
-/backend
-/frontend
-README.md
-```
-
----
-
-## 🌐 Deployment Tags Convention
-
-Docker images are tagged by:
-
-```
-{project-name}-{branch}:{version-from-package-json}
-```
-
-Example: `CV-careerVision-dev:1.2.0`
-
----
-
-## 🛡️ Security and Access
-
-- Secrets are managed in GitHub Actions > Secrets  
-- Only maintainers can trigger deployment to `main`
-
----
-
 ## 💪 Test GitHub Actions Locally with ACT
 
 We support local testing of the GitHub Actions pipeline using **act**.
@@ -165,6 +110,47 @@ We support local testing of the GitHub Actions pipeline using **act**.
    ```
 
 Make sure Docker is running, since act uses containers.
+
+
+
+## 🧪 Testing
+
+All code must include:
+
+- Unit Tests  
+- Optional: E2E tests (Cypress/Playwright)  
+
+Tests are required to pass in the CI pipeline.
+
+---
+
+## 🌐 Deployment Tags Convention
+
+Docker images are tagged by:
+
+```
+{project-name}-{branch}:{version-from-package-json}
+```
+
+Example: `CV-careerVision-dev:1.2.0`
+
+---
+---
+
+## 👤 Roles & Responsibilities
+
+| Role        | Responsibility                          |
+|-------------|----------------------------------------|
+| Developers  | Code, tests, commit messages, branches |
+| DevOps      | CI/CD, infra, deployment pipelines, reviews |
+| Reviewers   | Code reviews, quality enforcement       |
+
+---
+
+## 🛡️ Security and Access
+
+- Secrets are managed in GitHub Actions > Secrets  
+- Only maintainers can trigger deployment to `main`
 
 ---
 
